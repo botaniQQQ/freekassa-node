@@ -1,0 +1,28 @@
+{
+  "name": "freekassa-node",
+  "version": "1.0.0",
+  "description": "Generate URL for payment in Freekassa/Free-kassa.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/botaniQQQ/freekassa-node.git"
+  },
+  "keywords": [
+    "freekassa",
+    "free-kassa",
+    "sci",
+    "url"
+  ],
+  "author": {
+    "name": "botaniQQQ",
+    "email": "botaniq3@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/botaniQQQ/freekassa-node/issues"
+  },
+  "homepage": "https://github.com/botaniQQQ/freekassa-node#readme"
+}
