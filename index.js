@@ -5,7 +5,7 @@ module.exports = (params, world) => {
 
     let result = {},
         params_arr = [],
-        url = 'http://www.free-kassa.ru/merchant/cash.php?';
+        url = 'https://www.free-kassa.ru/merchant/cash.php?';
 
     params = JSON.parse(JSON.stringify(params));
 
