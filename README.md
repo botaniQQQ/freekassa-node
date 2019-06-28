@@ -19,7 +19,7 @@ console.log(freekassa({
 /* =>
 {
     "signature": "dfc2448091e2cc4191fc283435593e21",
-    "url": "http://www.free-kassa.ru/merchant/cash.php?
+    "url": "https://www.free-kassa.ru/merchant/cash.php?
         oa=99&
         o=ID_234&
         m=14963&
