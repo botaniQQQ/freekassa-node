@@ -1,4 +1,4 @@
-# Generate URL for payment in Freekassa/Free-kassa.
+# Generate URL for payment in Freekassa (Old Free-kassa).
 
 ## Installation
 
@@ -9,29 +9,41 @@ npm i freekassa-node
 ## Usage
 
 ```javascript
-const freekassa = require('freekassa-node');
+const freekassa = require("freekassa-node");
 
-console.log(freekassa({
-    "oa": "99",
-    "o": "ID_234",
-    "m": "14963",
-}, 'secret_word_1'));
+console.log(
+  freekassa(
+    {
+      oa: "99",
+      o: "ID_234",
+      m: "14963",
+      currency: "USD",
+    },
+    "secret_word_1"
+  )
+);
 /* =>
 {
     "signature": "dfc2448091e2cc4191fc283435593e21",
-    "url": "https://www.free-kassa.ru/merchant/cash.php?
+    "url": "https://pay.freekassa.ru/?
         oa=99&
         o=ID_234&
         m=14963&
+        currency=USD&
         s=dfc2448091e2cc4191fc283435593e21"
 }
  */
 
-console.log(freekassa({
-    "AMOUNT": "99",
-    "MERCHANT_ORDER_ID": "ID_234",
-    "MERCHANT_ID": "14963",
-}, 'secret_word_2'));
+console.log(
+  freekassa(
+    {
+      AMOUNT: "99",
+      MERCHANT_ORDER_ID: "ID_234",
+      MERCHANT_ID: "14963",
+    },
+    "secret_word_2"
+  )
+);
 /* =>
 {
     "signature": "c0905625cf96d7730487a4dda69c6a09"

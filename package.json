@@ -1,7 +1,7 @@
 {
   "name": "freekassa-node",
-  "version": "1.0.1",
-  "description": "Generate URL for payment in Freekassa/Free-kassa.",
+  "version": "2.0.0",
+  "description": "Generate URL for payment in Freekassa.",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
